@@ -6,7 +6,7 @@
 
 Clone project:
 ```bash
-$ git clone https://github.com/xxxxx/yyyyy
+$ git clone https://github.com/JoshuaHernandezAl/People4Business-blog
 ```
 # Backend
 ## Steps to run the project
