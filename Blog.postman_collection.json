@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "7442e720-27df-450e-8ecc-ebf7f023ed68",
+		"name": "Blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16053392"
+	},
+	"item": [
+		{
+			"name": "FindAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/posts?limit=2&offset=0",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"posts"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "2"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seed",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/seed",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"seed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Test article\",\n    \"content\":\"Holi HOli Holi\",\n    \"author\":\"Joshua Hernandez\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/posts",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/posts/12",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"posts",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/posts/search-by/el poder?byTitle=true",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"posts",
+						"search-by",
+						"el poder"
+					],
+					"query": [
+						{
+							"key": "byContent",
+							"value": "true",
+							"disabled": true
+						},
+						{
+							"key": "byAuthor",
+							"value": "true",
+							"disabled": true
+						},
+						{
+							"key": "byTitle",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
